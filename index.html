@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Praia Mar Pousada — Sol, mar e descanso</title>
+  <meta name="description"
+    content="Pousada pé na areia: suítes com vista para o mar, gastronomia, bem-estar e experiências que ficam com você.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ============ AVISO TOPO ============ -->
+  <div class="topbar" id="topbar">
+    <p>Reservas para a temporada 2026 já abertas — fale com nosso concierge.</p>
+    <button class="topbar__close" aria-label="Fechar aviso">&times;</button>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="logo" aria-label="Praia Mar Pousada — início">
+        <img class="logo__img" src="assets/images/logo.png" alt="">
+        <span class="logo__text">
+          <span class="logo__mark">Praia Mar</span>
+          <span class="logo__sub">pousada</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav__list">
+          <li class="nav__item has-sub">
+            <button class="nav__link" aria-expanded="false">Resorts</button>
+            <div class="submenu">
+              <div class="submenu__inner">
+                <a class="submenu__card" href="#resorts">
+                  <img src="assets/images/resort-1.jpg" alt="Praia Mar Areia">
+                  <h4>Praia Mar Areia</h4>
+                  <p>O capítulo original da vida na ilha, feito para todas as gerações.</p>
+                  <span class="link-underline">Explorar</span>
+                </a>
+                <a class="submenu__card" href="#resorts">
+                  <img src="assets/images/resort-2.jpg" alt="Praia Mar Onda">
+                  <h4>Praia Mar Onda</h4>
+                  <p>Dias ativos e noites restauradoras, feitos para compartilhar.</p>
+                  <span class="link-underline">Explorar</span>
+                </a>
+                <a class="submenu__card" href="#resorts">
+                  <img src="assets/images/resort-3.jpg" alt="Praia Mar Recanto">
+                  <h4>Praia Mar Recanto</h4>
+                  <p>Um capítulo escondido, onde privacidade não é detalhe: é tudo.</p>
+                  <span class="link-underline">Explorar</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#villas">Villas</a></li>
+          <li class="nav__item"><a class="nav__link" href="#experiencias">Experiências</a></li>
+          <li class="nav__item"><a class="nav__link" href="#bemestar">Bem-estar</a></li>
+          <li class="nav__item"><a class="nav__link" href="#gastronomia">Gastronomia</a></li>
+          <li class="nav__item"><a class="nav__link" href="#ofertas">Ofertas</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--ghost js-open-booking">Reservar</button>
+        <button class="burger js-open-menu" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MENU FULLSCREEN ============ -->
+  <div class="menu" id="menu" hidden>
+    <div class="menu__head">
+      <span class="menu__brand"><img src="assets/images/logo.png" alt=""><span class="logo__mark">Praia
+          Mar</span></span>
+      <button class="menu__close js-close-menu" aria-label="Fechar menu">Fechar</button>
+    </div>
+    <div class="menu__body">
+      <nav class="menu__nav" aria-label="Menu completo">
+        <a href="#resorts">Resorts</a>
+        <a href="#villas">Villas</a>
+        <a href="#experiencias">Experiências</a>
+        <a href="#bemestar">Bem-estar</a>
+        <a href="#gastronomia">Gastronomia</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#historia">Nossa história</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="menu__aside">
+        <img src="assets/images/brand-sign.jpg" alt="Letreiro iluminado da Praia Mar Pousada">
+        <p>“O luxo mais significativo costuma ser o mais simples.”</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__media">
+      <img src="assets/images/hero-island.jpg" alt="Vista aérea de uma ilha tropical">
+    </div>
+    <div class="hero__content">
+      <p class="eyebrow">Bem-vindo à Praia Mar</p>
+      <h1 class="hero__title">Só o que importa.</h1>
+      <a href="#intro" class="btn btn--outline">Descobrir</a>
+    </div>
+    <a href="#intro" class="hero__scroll" aria-label="Rolar para baixo"><span></span></a>
+  </section>
+
+  <!-- ============ BARRA DE RESERVA ============ -->
+  <section class="booking" id="booking">
+    <form class="booking__form" id="booking-form">
+      <div class="booking__field">
+        <label for="destino">Destino</label>
+        <select id="destino" name="destino">
+          <option value="">Selecionar resort</option>
+          <option>Praia Mar Areia</option>
+          <option>Praia Mar Onda</option>
+          <option>Praia Mar Recanto</option>
+        </select>
+      </div>
+      <div class="booking__field">
+        <label for="checkin">Check-in</label>
+        <input type="date" id="checkin" name="checkin">
+      </div>
+      <div class="booking__field">
+        <label for="checkout">Check-out</label>
+        <input type="date" id="checkout" name="checkout">
+      </div>
+      <div class="booking__field">
+        <label for="hospedes">Hóspedes</label>
+        <select id="hospedes" name="hospedes">
+          <option>1 adulto</option>
+          <option selected>2 adultos</option>
+          <option>2 adultos + 1 criança</option>
+          <option>2 adultos + 2 crianças</option>
+          <option>4 adultos</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn--solid">Reservar sua viagem</button>
+    </form>
+    <p class="booking__msg" id="booking-msg" role="status"></p>
+  </section>
+
+  <!-- ============ INTRO ============ 
+  <section class="intro" id="intro">
+    <div class="intro__inner reveal">
+      <p>No instante em que você chega, a travessia começa. O mundo se afasta. Descalço na areia, com o ar salgado na
+        pele, o tempo desacelera junto com a maré.</p>
+      <p class="intro__small">Aqui a natureza é a anfitriã. Os dias se desenrolam no próprio ritmo, guiados por pouco
+        mais que luz, mar e céu. Você chega procurando algo e parte inteiro — levando um pouco desse jeito de viver com
+        você.</p>
+    </div>
+  </section> -->
+
+  <!-- ============ RESORTS ============ 
+  <section class="resorts section" id="resorts">
+    <header class="section__head reveal">
+      <p class="eyebrow">Nossos resorts</p>
+      <h2>Três ilhas, três capítulos</h2>
+    </header>
+    <div class="resorts__grid">
+      <article class="card reveal">
+        <a href="#" class="card__media"><img src="assets/images/resort-1.jpg" alt="Praia Mar Areia"></a>
+        <h3>Praia Mar Areia</h3>
+        <p>O capítulo original da vida na ilha, onde cada geração encontra a própria aventura.</p>
+        <a href="#" class="link-underline">Explorar</a>
+      </article>
+      <article class="card reveal">
+        <a href="#" class="card__media"><img src="assets/images/resort-2.jpg" alt="Praia Mar Onda"></a>
+        <h3>Praia Mar Onda</h3>
+        <p>Um capítulo energizante: dias ativos e noites restauradoras, feitos para compartilhar.</p>
+        <a href="#" class="link-underline">Explorar</a>
+      </article>
+      <article class="card reveal">
+        <a href="#" class="card__media"><img src="assets/images/resort-3.jpg" alt="Praia Mar Recanto"></a>
+        <h3>Praia Mar Recanto</h3>
+        <p>Um capítulo escondido, onde a privacidade não é um detalhe — é o ponto todo.</p>
+        <a href="#" class="link-underline">Explorar</a>
+      </article>
+    </div>
+  </section> -->
+
+  <!-- ============ ABAS: PILARES ============ -->
+  <section class="pillars" id="historia">
+    <div class="pillars__tabs reveal" role="tablist" aria-label="Pilares">
+      <button class="pillars__tab is-active" role="tab" aria-selected="true" data-tab="historia">Nossa história</button>
+      <button class="pillars__tab" role="tab" aria-selected="false" data-tab="stewardship">Sustentabilidade</button>
+      <button class="pillars__tab" role="tab" aria-selected="false" data-tab="descoberta">Descoberta</button>
+      <button class="pillars__tab" role="tab" aria-selected="false" data-tab="bemestar">Bem-estar</button>
+      <button class="pillars__tab" role="tab" aria-selected="false" data-tab="stars">Encontros</button>
+    </div>
+
+    <div class="pillars__panels">
+      <article class="pillars__panel is-active" id="panel-historia" role="tabpanel">
+        <div class="pillars__media"><img src="assets/images/story.jpg" alt="Pôr do sol na praia"></div>
+        <div class="pillars__text">
+          <h2>Voltar ao que importa</h2>
+          <p>Há mais de trinta anos seguimos uma crença simples: os luxos mais significativos costumam ser os mais
+            simples. Sapatos deixados de lado. O ruído do mundo baixado. Até restar presença, conexão e um jeito mais
+            silencioso de viver.</p>
+          <a href="#" class="link-underline">Sobre a Praia Mar</a>
+        </div>
+      </article>
+
+      <article class="pillars__panel" id="panel-stewardship" role="tabpanel" hidden>
+        <div class="pillars__media"><img src="assets/images/stewardship.jpg" alt="Mergulhador em recife de corais">
+        </div>
+        <div class="pillars__text">
+          <h2>Proteger o que importa</h2>
+          <p>A natureza não é cenário, é a razão de tudo. Pisamos leve, desperdiçamos menos e devolvemos mais do que
+            tiramos. Cada escolha é guiada pelo cuidado, criando um impacto que permanece.</p>
+          <a href="#" class="link-underline">Explorar sustentabilidade</a>
+        </div>
+      </article>
+
+      <article class="pillars__panel" id="panel-descoberta" role="tabpanel" hidden>
+        <div class="pillars__media"><img src="assets/images/discovery.jpg" alt="Veleiro em praia deserta"></div>
+        <div class="pillars__text">
+          <h2>Revelar o que importa</h2>
+          <p>Nenhum dia precisa ser igual ao outro. Navegue, mergulhe ou fique perto da areia. Deixe a curiosidade
+            desenhar o dia. O que importa não é o que você faz, e sim como isso te faz sentir.</p>
+          <a href="#" class="link-underline">Ver experiências</a>
+        </div>
+      </article>
+
+      <article class="pillars__panel" id="panel-bemestar" role="tabpanel" hidden>
+        <div class="pillars__media"><img src="assets/images/wellbeing.jpg" alt="Pavilhões de spa sobre a água"></div>
+        <div class="pillars__text">
+          <h2>Restaurar o que importa</h2>
+          <p>Começa por ouvir: o corpo quando quer se mover, a mente quando pede silêncio. Tratamentos, respiração, uma
+            partida de padel ao entardecer. Tudo no seu horário, no seu ritmo.</p>
+          <a href="#" class="link-underline">Explorar bem-estar</a>
+        </div>
+      </article>
+
+      <article class="pillars__panel" id="panel-stars" role="tabpanel" hidden>
+        <div class="pillars__media"><img src="assets/images/stars.jpg" alt="Piscina do resort ao entardecer"></div>
+        <div class="pillars__text">
+          <h2>Momentos que ficam</h2>
+          <p>Pessoas notáveis, momentos compartilhados, perspectivas novas. Um chef desenhando sabores. Um astrônomo
+            revelando o céu. Conversas que continuam muito depois do fim da noite.</p>
+          <a href="#" class="link-underline">Ver programação</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIÊNCIAS (CARROSSEL) ============ -->
+  <section class="section carousel-section" id="experiencias">
+    <header class="section__head reveal">
+      <p class="eyebrow">Experiências</p>
+      <h2>Dias guiados pela curiosidade</h2>
+    </header>
+
+    <div class="carousel">
+      <div class="carousel__track" id="carousel-track">
+        <article class="slide">
+          <img src="assets/images/offer-1.jpg" alt="Surfe">
+          <div class="slide__body">
+            <h3>Surfe ao amanhecer</h3>
+            <p>Picos reservados e instrutores particulares antes do café.</p>
+          </div>
+        </article>
+        <article class="slide">
+          <img src="assets/images/gallery-2.jpg" alt="Píer de madeira sobre a água">
+          <div class="slide__body">
+            <h3>Píer privativo</h3>
+            <p>Uma mesa só sua no fim do deck, iluminada por lanternas.</p>
+          </div>
+        </article>
+        <article class="slide">
+          <img src="assets/images/offer-2.jpg" alt="Safári ao pôr do sol">
+          <div class="slide__body">
+            <h3>Safári ao pôr do sol</h3>
+            <p>Planície aberta, luz dourada e o silêncio do fim de tarde.</p>
+          </div>
+        </article>
+        <article class="slide">
+          <img src="assets/images/gallery-6.jpg" alt="Montanhas ao amanhecer">
+          <div class="slide__body">
+            <h3>Caminhada ao amanhecer</h3>
+            <p>Trilha guiada até o mirante, com café servido no topo.</p>
+          </div>
+        </article>
+        <article class="slide">
+          <img src="assets/images/offer-4.jpg" alt="Barco de madeira em lago">
+          <div class="slide__body">
+            <h3>Travessia lenta</h3>
+            <p>Um barco de madeira, sem pressa e sem destino fixo.</p>
+          </div>
+        </article>
+        <article class="slide">
+          <img src="assets/images/offer-3.jpg" alt="Vista aérea da costa">
+          <div class="slide__body">
+            <h3>Voo panorâmico</h3>
+            <p>Vinte minutos de hidroavião sobre atóis e bancos de areia.</p>
+          </div>
+        </article>
+      </div>
+      <div class="carousel__nav">
+        <button class="carousel__btn" id="prev" aria-label="Anterior">&larr;</button>
+        <button class="carousel__btn" id="next" aria-label="Próximo">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VILLAS / SPLIT ============ 
+  <section class="split section" id="villas">
+    <div class="split__media reveal"><img src="assets/images/resort-3.jpg" alt="Villa sobre a água"></div>
+    <div class="split__text reveal">
+      <p class="eyebrow">Villas</p>
+      <h2>Espaço para respirar</h2>
+      <p>De villas na areia a residências sobre a água com piscina privativa e teto retrátil para dormir sob as
+        estrelas. Todas com mordomo dedicado — o seu Sr./Sra. Sexta-feira.</p>
+      <ul class="ticks">
+        <li>Piscina privativa e deck sobre o mar</li>
+        <li>Teto retrátil no quarto principal</li>
+        <li>Bicicletas e caiaque inclusos</li>
+        <li>Adega e despensa personalizadas</li>
+      </ul>
+      <a href="#" class="link-underline">Ver todas as villas</a>
+    </div>
+  </section> -->
+
+  <!-- ============ GASTRONOMIA / GALERIA ============ -->
+  <section class="section" id="gastronomia">
+    <header class="section__head reveal">
+      <p class="eyebrow">Gastronomia</p>
+      <h2>Sabores do arquipélago</h2>
+    </header>
+    <div class="gallery">
+      <figure class="gallery__item reveal"><img src="assets/images/gallery-1.jpg" alt="Deck com espreguiçadeiras">
+        <figcaption>Beach Club</figcaption>
+      </figure>
+      <figure class="gallery__item reveal"><img src="assets/images/gallery-4.jpg" alt="Amanhecer no mar">
+        <figcaption>Café ao amanhecer</figcaption>
+      </figure>
+      <figure class="gallery__item reveal"><img src="assets/images/gallery-3.jpg" alt="Piscina entre palmeiras">
+        <figcaption>Jantar na selva</figcaption>
+      </figure>
+      <figure class="gallery__item reveal"><img src="assets/images/gallery-5.jpg" alt="Terraço com vista para o mar">
+        <figcaption>Mesa do chef</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ BEM-ESTAR / CITAÇÃO ============
+  <section class="quote" id="bemestar">
+    <div class="quote__inner reveal">
+      <blockquote>“Você chega procurando alguma coisa e parte inteiro.”</blockquote>
+      <p>— Nossos hóspedes, há mais de trinta anos</p>
+    </div>
+  </section> -->
+
+  <!-- ============ OFERTAS / CTA ============ 
+  <section class="cta" id="ofertas">
+    <img class="cta__bg" src="assets/images/cta-summer.jpg" alt="Praia de areia branca">
+    <div class="cta__content reveal">
+      <p class="eyebrow">Ofertas</p>
+      <h2>Verão na Praia Mar</h2>
+      <p>Fique sete noites e pague cinco, com transfer de hidroavião e jantar privativo na praia.</p>
+      <a href="#booking" class="btn btn--solid">Ver condições</a>
+    </div>
+  </section> -->
+
+  <!-- ============ PRÊMIOS (MARQUEE) ============ 
+  <section class="awards">
+    <div class="awards__track">
+      <span>Condé Nast Traveler</span><span>•</span><span>Travel + Leisure</span><span>•</span>
+      <span>World Travel Awards</span><span>•</span><span>Michelin Key</span><span>•</span>
+      <span>Forbes Five Star</span><span>•</span>
+      <span>Condé Nast Traveler</span><span>•</span><span>Travel + Leisure</span><span>•</span>
+      <span>World Travel Awards</span><span>•</span><span>Michelin Key</span><span>•</span>
+      <span>Forbes Five Star</span><span>•</span>
+    </div>
+  </section> -->
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contato">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img class="footer__logo" src="assets/images/logo.png" alt="Praia Mar Pousada">
+        <span class="logo__mark">Praia Mar</span>
+        <p>Só o que importa.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Descubra mais</h4>
+        <ul>
+          <li><a href="#villas">Villas</a></li>
+          <li><a href="#experiencias">Experiências</a></li>
+          <li><a href="#bemestar">Bem-estar</a></li>
+          <li><a href="#gastronomia">Gastronomia</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Saiba mais</h4>
+        <ul>
+          <li><a href="#historia">Nossa história</a></li>
+          <li><a href="#historia">Sustentabilidade</a></li>
+          <li><a href="#">Imprensa</a></li>
+          <li><a href="#">Agentes de viagem</a></li>
+          <li><a href="#">Trabalhe conosco</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Fale com a gente</h4>
+        <ul>
+          <li><a href="tel:+5511999999999">+55 11 99999-9999</a></li>
+          <li><a href="mailto:reservas@praiamar.example">reservas@praiamar.example</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__news">
+        <h4>Fique inspirado</h4>
+        <form id="news-form">
+          <input type="text" name="nome" placeholder="Nome" required>
+          <input type="email" name="email" placeholder="Seu e-mail" required>
+          <button type="submit" class="btn btn--solid">Inscrever</button>
+        </form>
+        <p class="footer__msg" id="news-msg" role="status"></p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Praia Mar. Projeto de demonstração — imagens do Unsplash.</p>
+      <ul>
+        <li><a href="#">Privacidade</a></li>
+        <li><a href="#">Termos</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Voltar ao topo">&uarr;</button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
